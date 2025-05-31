@@ -1,0 +1,100 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+
+# Go-specific build and test files
+*.test
+*.out
+*.prof
+coverage.out
+cover.html
+
+# Go module cache
+vendor/
+#go.sum  # Optional: Include if you don't want to commit go.sum
+
+# Dependency directories (if not using Go modules)
+dep/
+glide.lock
+
+# Environment files with sensitive data
+.env
+*.env
+.env.local
+.env.*.local
+config.yaml
+config.json
+secrets/
+
+# Sensitive database credentials
+*.key
+*.pem
+*.cert
+credentials.json
+cassandra.yaml
+pinecone_api_key.txt
+
+# Log files
+*.log
+logs/
+*.log.gz
+
+# Temporary files
+tmp/
+*.tmp
+*.swp
+*~
+
+# IDE and editor files
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS-specific files
+.DS_Store
+
+# Local testing and debugging
+debug/
+*.pid
+*.seed
+*.pid.lock
+
+# Documentation and miscellaneous
+docs/_build/
+*.md.bak
+
+# Docker and container-related files
+docker-compose.override.yml
+*.dockerignore
+Dockerfile.local
+
+# CI/CD and deployment files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Coverage and profiling outputs
+profile.out
+coverage.txt
+*.coverprofile
+
+# Avoid committing large datasets or ML model files (e.g., for Pinecone embeddings)
+data/
+*.h5
+*.model
+*.pb
+embeddings/
+vectors/
+
+# Avoid committing database dumps or backups
+*.sql
+*.dump
+*.backup
+cassandra_snapshots/
